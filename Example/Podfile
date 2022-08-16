@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'YDClearCacheService_Example' do
+  pod 'YDClearCacheService', :path => '../'
+
+  target 'YDClearCacheService_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
